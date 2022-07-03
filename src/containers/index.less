@@ -11,6 +11,7 @@
     background:url('//img.alicdn.com/tps/TB1qq7kNXXXXXacXFXXXXXXXXXX-400-186.png') no-repeat;
     overflow:hidden;
 }
+@color-brown: #987f0f;
 *{
     box-sizing: border-box;
     margin: 0;
@@ -30,6 +31,7 @@ body{
 }
 .app{
     width: 640px;
+    height: 400px;
     padding-top: 42px;
     box-shadow: 0 0 10px #fff inset;
     position: absolute;
@@ -37,4 +39,25 @@ body{
     left: 50%;
     margin: -480px 0 0 -320px;
     background-color: #efcc19;
+}
+.rect{
+    width: 480px;
+    padding: 45px 0 35px;
+    border: #000 solid;
+    border-width:0 10px 10px;
+    margin: 0 auto;
+    position: relative;
+    &.drop{
+        transform: translateY(5px);
+    }
+}
+.screen{
+    width: 390px;
+    height: 478px;
+    border:solid 5px;
+    border-color: @color-brown #fae36c #fae36c @color-brown;
+    margin: 0 auto;
+    background-color: @color-brown;
+    margin: 0 auto;
+    position: relative;
 }

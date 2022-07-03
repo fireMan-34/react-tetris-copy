@@ -43,7 +43,12 @@ module.exports = {
                 test: /\.(less|css)$/,
                 use: [
                     IS_PROD ? MiniCssExtractPlugin.loader : 'style-loader',
-                    "css-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            module: true,
+                        },
+                    },
                     "less-loader",
                     "postcss-loader",
                 ]
@@ -63,4 +68,4 @@ module.exports = {
         }),
 
     ]
-}
+};

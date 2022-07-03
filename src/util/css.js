@@ -10,8 +10,7 @@ const size = (w, h) => {
     let css = {};
     if (ratio < 1.5) {
         scale = h / 960;
-    }
-    else {
+    } else {
         scale = w / 640;
         filling = (h - (960 * scale)) / scale / 3;
         css = {

@@ -1,6 +1,7 @@
 import * as Type from "../type";
 import { lastRecord } from '../../util/cache';
-const drop = (state, action) => {
+const initState = lastRecord?.drop || false;
+const drop = (state = initState, action) => {
     switch (action.type) {
         case Type.DROP:
             return action.data;
