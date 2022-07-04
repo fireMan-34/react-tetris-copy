@@ -6,8 +6,6 @@ const NODE_MODULES = /node_modules/;
 
 const IS_PROD = process.env.NODE_ENV === "prod";
 
-console.log("is_prod", IS_PROD);
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
@@ -46,7 +44,7 @@ module.exports = {
                     {
                         loader: "css-loader",
                         options: {
-                            module: true,
+                            modules: true,
                         },
                     },
                     "less-loader",

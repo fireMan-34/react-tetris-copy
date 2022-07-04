@@ -11,11 +11,12 @@ import * as Type from '../store/type';
 import { size } from "../util/css";
 import { lastRecord } from "../util/cache";
 
+console.log(style);
 function App({ lock, drop, setLock }) {
     const { w, h } = useResponseClinet();
     return (
-        <div style={size(w, h)} className={style.app}>
-            <div className={classnames({ [style.rect]: true }, { [style.drop]: drop })}></div>
+        <div style={size(w, h)} className={"style.app"}>
+            <div className={classnames({ "rect": true }, { "drop": drop })}></div>
             <div className='screen'></div>
         </div>
     );

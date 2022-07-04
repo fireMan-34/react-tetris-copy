@@ -22,9 +22,7 @@ module.exports = merge(webpackConfigBase, {
         }
     },
     plugins: [
-        new EslintWebpackPlugin({
-
-        }),
+        new EslintWebpackPlugin({}),
     ]
 
 });
