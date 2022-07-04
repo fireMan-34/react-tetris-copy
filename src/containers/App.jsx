@@ -15,9 +15,9 @@ console.log(style);
 function App({ lock, drop, setLock }) {
     const { w, h } = useResponseClinet();
     return (
-        <div style={size(w, h)} className={"style.app"}>
-            <div className={classnames({ "rect": true }, { "drop": drop })}></div>
-            <div className='screen'></div>
+        <div style={size(w, h)} className={style.app}>
+            <div className={classnames({ [style.rect]: true }, { [style.drop]: drop })}></div>
+            <div className={style.screen}></div>
         </div>
     );
 };
