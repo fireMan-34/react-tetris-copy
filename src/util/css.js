@@ -20,7 +20,7 @@ const size = (w, h) => {
         };
         css[transform] = `scale(${scale})`;
     }
-    return css;
+    return { css, filling };
 };
 export {
     size
