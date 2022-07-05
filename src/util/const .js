@@ -37,7 +37,11 @@ const blankMatrix = (() => {
 
 const MAX_POINT = 999999;
 
+const getNextType = () => {
+    return blockType[Math.floor(Math.random() * blockTypeMap)];
+};
+
 export {
     blockShape, origin, blockType, blockTypeMap,
-    blanckLine, blankMatrix, MAX_POINT
+    blanckLine, blankMatrix, MAX_POINT, getNextType
 };

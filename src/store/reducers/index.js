@@ -7,9 +7,11 @@ import focus from './focus';
 import keyboardReducer from './keyboard';
 import martix from './matrix';
 import max from './max';
+import music from './music';
+import next from './next';
 
 const rootReducer = combineReducers({
     lock, drop, clearLines, cur, focus, keyboardReducer,
-    martix, max,
+    martix, max, music, next
 });
 export default rootReducer;

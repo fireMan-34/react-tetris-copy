@@ -68,7 +68,6 @@ const music = {};
     };
     req.send();
 });
-module.exports = {
-    hasWebAudioAPI,
-    music
+export {
+    hasWebAudioAPI, music
 };
